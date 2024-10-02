@@ -1,0 +1,36 @@
+{
+  "timestamp": "October 01, 2024 07:52:56 PM",
+  "run_id": "1765d645045f4c58a60de4196ae8a323",
+  "overall": {
+    "precision": 0.8890509696124052,
+    "recall": 0.8848167539267016,
+    "f1": 0.8843150451672779,
+    "num_samples": 191.0
+  },
+  "per_class": {
+    "natural-language-processing": {
+      "precision": 0.8823529411764706,
+      "recall": 0.9615384615384616,
+      "f1": 0.920245398773006,
+      "num_samples": 78.0
+    },
+    "computer-vision": {
+      "precision": 0.9516129032258065,
+      "recall": 0.8309859154929577,
+      "f1": 0.887218045112782,
+      "num_samples": 71.0
+    },
+    "other": {
+      "precision": 0.7931034482758621,
+      "recall": 0.8846153846153846,
+      "f1": 0.8363636363636363,
+      "num_samples": 26.0
+    },
+    "mlops": {
+      "precision": 0.8,
+      "recall": 0.75,
+      "f1": 0.7741935483870969,
+      "num_samples": 16.0
+    }
+  }
+}

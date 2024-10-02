@@ -1,0 +1,21 @@
+site_name: My App
+site_url: https://madewithml.com/
+repo_url: https://github.com/GokuMohandas/Made-With-ML/
+nav:
+  - Home: index.md
+  - app:
+    - data: app/data.md
+    - config: app/config.md
+    - models: app/models.md
+    - train: app/train.md
+    - tune: app/tune.md
+    - evaluate: app/evaluate.md
+    - predict: app/predict.md
+    - serve: app/serve.md
+    - utils: app/utils.md
+theme: readthedocs
+plugins:
+  - mkdocstrings
+watch:
+  - .  # reload docs for any file changes
+

@@ -1,0 +1,695 @@
+INFO 2024-10-01 15:14:48,444 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpzbqtgljr
+
+INFO 2024-10-01 15:14:48,445 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpzbqtgljr/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 15:14:50,944 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x137feb7f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 15:14:50,945 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 15:16:02,667 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpa1xka9qu
+
+INFO 2024-10-01 15:16:02,668 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpa1xka9qu/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 15:16:05,002 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13c1738e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 15:16:05,003 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 15:26:48,106 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpcdk5b1vw
+
+INFO 2024-10-01 15:26:48,106 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpcdk5b1vw/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 15:26:50,302 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13f1778e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 15:26:50,303 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 15:28:22,226 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpicul_1b5
+
+INFO 2024-10-01 15:28:22,227 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpicul_1b5/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 15:28:24,425 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x136aaf8e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 15:28:24,426 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 15:31:40,494 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp49hfno5b
+
+INFO 2024-10-01 15:31:40,495 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp49hfno5b/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 15:31:42,681 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13aef37f0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 15:31:42,682 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 15:43:13,246 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpv_wsxc1k
+
+INFO 2024-10-01 15:43:13,247 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpv_wsxc1k/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 15:43:15,428 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x133217850>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 15:43:15,429 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 15:43:37,845 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpezrdim1h
+
+INFO 2024-10-01 15:43:37,846 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpezrdim1h/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 15:43:40,039 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x141ef7760>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 15:43:40,040 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 16:11:47,272 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpnpfvdiz8
+
+INFO 2024-10-01 16:11:47,273 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpnpfvdiz8/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 16:11:49,685 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x14193f700>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 16:11:49,687 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 16:18:38,292 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmptncomc5o
+
+INFO 2024-10-01 16:18:38,293 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmptncomc5o/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 16:18:40,487 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1345ff790>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 16:18:40,488 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 16:35:47,396 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpwziyk1e3
+
+INFO 2024-10-01 16:35:47,397 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpwziyk1e3/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 16:35:49,849 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x136c879a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 16:35:49,850 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 16:37:55,693 [root:train.py:train_model:212]
+{
+  "timestamp": "October 01, 2024 04:37:55 PM",
+  "run_id": "1765d645045f4c58a60de4196ae8a323",
+  "params": {
+    "dropout_p": 0.5,
+    "lr": 0.0001,
+    "lr_factor": 0.8,
+    "lr_patience": 3,
+    "num_samples": null,
+    "num_epochs": 2,
+    "batch_size": 256,
+    "num_classes": 4
+  },
+  "metrics": [
+    {
+      "epoch": 0,
+      "train_loss": 0.471747867266337,
+      "val_loss": 0.31944572925567627
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.22722757260004675,
+      "val_loss": 0.25710462406277657
+    }
+  ]
+}
+
+INFO 2024-10-01 16:40:09,828 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpyx85lj_a
+
+INFO 2024-10-01 16:40:09,829 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpyx85lj_a/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 16:40:12,272 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x132f4f8e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 16:40:12,273 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 16:50:35,290 [root:train.py:train_model:212]
+{
+  "timestamp": "October 01, 2024 04:50:35 PM",
+  "run_id": "d938e2d8930b419da23e9be9ca872c31",
+  "params": {
+    "dropout_p": 0.5,
+    "lr": 0.0001,
+    "lr_factor": 0.8,
+    "lr_patience": 3,
+    "num_samples": null,
+    "num_epochs": 10,
+    "batch_size": 256,
+    "num_classes": 4
+  },
+  "metrics": [
+    {
+      "epoch": 0,
+      "train_loss": 0.4737494746843973,
+      "val_loss": 0.3238608092069626
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.226491058866183,
+      "val_loss": 0.28579818457365036
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.10391743108630179,
+      "val_loss": 0.24463658407330513
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.05747493306795756,
+      "val_loss": 0.22025760263204575
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.04027060630420844,
+      "val_loss": 0.2519930601119995
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.029598347656428815,
+      "val_loss": 0.22141585685312748
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.04466756662974755,
+      "val_loss": 0.392719279974699
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.04143708099921544,
+      "val_loss": 0.3990102745592594
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.07233909759670497,
+      "val_loss": 0.25988222379237413
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.040276155124107996,
+      "val_loss": 0.3076828047633171
+    }
+  ]
+}
+
+INFO 2024-10-01 16:58:50,167 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13fb805e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 16:58:50,168 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 16:59:43,169 [torch.nn.parallel.distributed:distributed.py:forward:1140]
+Reducer buckets have been rebuilt in this iteration.
+
+INFO 2024-10-01 16:59:43,172 [torch.nn.parallel.distributed:distributed.py:forward:1140]
+Reducer buckets have been rebuilt in this iteration.
+
+INFO 2024-10-01 16:59:43,172 [torch.nn.parallel.distributed:distributed.py:forward:1140]
+Reducer buckets have been rebuilt in this iteration.
+
+INFO 2024-10-01 16:59:43,173 [torch.nn.parallel.distributed:distributed.py:forward:1140]
+Reducer buckets have been rebuilt in this iteration.
+
+INFO 2024-10-01 17:09:35,494 [torch.nn.parallel.distributed:distributed.py:forward:1140]
+Reducer buckets have been rebuilt in this iteration.
+
+INFO 2024-10-01 17:09:35,545 [torch.nn.parallel.distributed:distributed.py:forward:1140]
+Reducer buckets have been rebuilt in this iteration.
+
+INFO 2024-10-01 17:09:35,546 [torch.nn.parallel.distributed:distributed.py:forward:1140]
+Reducer buckets have been rebuilt in this iteration.
+
+INFO 2024-10-01 17:09:35,547 [torch.nn.parallel.distributed:distributed.py:forward:1140]
+Reducer buckets have been rebuilt in this iteration.
+
+INFO 2024-10-01 17:12:44,277 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13da90550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 17:12:44,278 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 17:24:02,697 [root:tune.py:tune_models:170]
+{
+  "timestamp": "October 01, 2024 05:24:02 PM",
+  "run_id": "3c5d579d18794b91a544163e1cd617de",
+  "params": {
+    "dropout_p": 0.5,
+    "lr": 0.0001,
+    "lr_factor": 0.8,
+    "lr_patience": 3.0
+  },
+  "metrics": [
+    {
+      "epoch": 0,
+      "train_loss": 0.47979529897371925,
+      "val_loss": 0.3514171913266182
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.2348445316155752,
+      "val_loss": 0.3501528650522232
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.12855873256921768,
+      "val_loss": 0.2394416518509388
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.10541641612847646,
+      "val_loss": 0.2990013472735882
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.09159208089113235,
+      "val_loss": 0.2413061521947384
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.058456774304310476,
+      "val_loss": 0.2822404094040394
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.03455207627266645,
+      "val_loss": 0.23214344680309296
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.029103746823966502,
+      "val_loss": 0.3299291431903839
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.02898611146956682,
+      "val_loss": 0.27728890255093575
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.025595435686409474,
+      "val_loss": 0.2974110674113035
+    }
+  ]
+}
+
+INFO 2024-10-01 19:41:03,515 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13cce1570>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 19:41:03,517 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 19:41:20,890 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp1mim_tpg
+
+INFO 2024-10-01 19:41:20,891 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp1mim_tpg/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:21,053 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpklo3kenm
+
+INFO 2024-10-01 19:41:21,053 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpklo3kenm/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:21,056 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpd2vo6hhs
+
+INFO 2024-10-01 19:41:21,057 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpd2vo6hhs/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:21,065 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpngracwfl
+
+INFO 2024-10-01 19:41:21,066 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpngracwfl/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:21,319 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpy4yi60mf
+
+INFO 2024-10-01 19:41:21,319 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpy4yi60mf/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:21,334 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmplww6qbo_
+
+INFO 2024-10-01 19:41:21,335 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmplww6qbo_/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:21,339 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpuxm2g3yt
+
+INFO 2024-10-01 19:41:21,341 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpuxm2g3yt/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:21,347 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpgms1o0nx
+
+INFO 2024-10-01 19:41:21,348 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpgms1o0nx/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:21,351 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp5zqvp44n
+
+INFO 2024-10-01 19:41:21,352 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp5zqvp44n/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:21,358 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp93wh39ms
+
+INFO 2024-10-01 19:41:21,358 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp93wh39ms/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:21,359 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp1zr784ob
+
+INFO 2024-10-01 19:41:21,359 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp1zr784ob/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:21,351 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpgqgrmjpa
+
+INFO 2024-10-01 19:41:21,363 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpgqgrmjpa/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:41:33,145 [root:evaluation.py:evaluate:103]
+{
+  "timestamp": "October 01, 2024 07:41:33 PM",
+  "run_id": "1765d645045f4c58a60de4196ae8a323",
+  "overall": {
+    "precision": 0.3717919590131914,
+    "recall": 0.3717277486910995,
+    "f1": 0.37066529258940834,
+    "num_samples": 191.0
+  },
+  "per_class": {
+    "natural-language-processing": {
+      "precision": 0.4470588235294118,
+      "recall": 0.48717948717948717,
+      "f1": 0.46625766871165647,
+      "num_samples": 78.0
+    },
+    "computer-vision": {
+      "precision": 0.4032258064516129,
+      "recall": 0.352112676056338,
+      "f1": 0.37593984962406013,
+      "num_samples": 71.0
+    },
+    "other": {
+      "precision": 0.20689655172413793,
+      "recall": 0.23076923076923078,
+      "f1": 0.21818181818181817,
+      "num_samples": 26.0
+    },
+    "mlops": {
+      "precision": 0.13333333333333333,
+      "recall": 0.125,
+      "f1": 0.12903225806451615,
+      "num_samples": 16.0
+    }
+  }
+}
+
+INFO 2024-10-01 19:43:35,541 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13a3014e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 19:43:35,542 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 19:43:52,165 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp6gd2qv0j
+
+INFO 2024-10-01 19:43:52,166 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp6gd2qv0j/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:43:52,307 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp9fv430_w
+
+INFO 2024-10-01 19:43:52,308 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp9fv430_w/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:43:52,314 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp77arjvzw
+
+INFO 2024-10-01 19:43:52,314 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp77arjvzw/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:43:52,315 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpi4o8zpgc
+
+INFO 2024-10-01 19:43:52,325 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpi4o8zpgc/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:43:52,551 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp4fgipezf
+
+INFO 2024-10-01 19:43:52,552 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp4fgipezf/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:43:52,583 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp5bubj_4u
+
+INFO 2024-10-01 19:43:52,584 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp5bubj_4u/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:43:52,574 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpv5y5qb6q
+
+INFO 2024-10-01 19:43:52,585 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpv5y5qb6q/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:43:52,601 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpdz57hl6l
+
+INFO 2024-10-01 19:43:52,602 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpdz57hl6l/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:43:52,607 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp9lpmw_jy
+
+INFO 2024-10-01 19:43:52,607 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp9lpmw_jy/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:43:52,628 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp7ougjs_b
+
+INFO 2024-10-01 19:43:52,632 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpsuyrf5vv
+
+INFO 2024-10-01 19:43:52,632 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpsuyrf5vv/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:43:52,629 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp7ougjs_b/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:43:52,642 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpqhrrwz3u
+
+INFO 2024-10-01 19:43:52,643 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpqhrrwz3u/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:44:03,752 [root:evaluation.py:evaluate:103]
+{
+  "timestamp": "October 01, 2024 07:44:03 PM",
+  "run_id": "1765d645045f4c58a60de4196ae8a323",
+  "overall": {
+    "precision": 0.5108183601553883,
+    "recall": 0.5078534031413613,
+    "f1": 0.5077992793765919,
+    "num_samples": 191.0
+  },
+  "per_class": {
+    "natural-language-processing": {
+      "precision": 0.5411764705882353,
+      "recall": 0.5897435897435898,
+      "f1": 0.5644171779141104,
+      "num_samples": 78.0
+    },
+    "computer-vision": {
+      "precision": 0.5806451612903226,
+      "recall": 0.5070422535211268,
+      "f1": 0.5413533834586466,
+      "num_samples": 71.0
+    },
+    "other": {
+      "precision": 0.3793103448275862,
+      "recall": 0.4230769230769231,
+      "f1": 0.4,
+      "num_samples": 26.0
+    },
+    "mlops": {
+      "precision": 0.26666666666666666,
+      "recall": 0.25,
+      "f1": 0.2580645161290323,
+      "num_samples": 16.0
+    }
+  }
+}
+
+INFO 2024-10-01 19:52:27,288 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x13a03d5a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 19:52:27,289 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 19:52:45,113 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpsmf4uoxn
+
+INFO 2024-10-01 19:52:45,113 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpsmf4uoxn/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:45,507 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp4gvwtkd8
+
+INFO 2024-10-01 19:52:45,508 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp4gvwtkd8/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:45,750 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpw6vb8dix
+
+INFO 2024-10-01 19:52:45,751 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpw6vb8dix/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:45,761 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmprredsrlw
+
+INFO 2024-10-01 19:52:45,762 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmprredsrlw/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:45,776 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpm4v1h95h
+
+INFO 2024-10-01 19:52:45,777 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpm4v1h95h/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:45,786 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpv0jy9_aw
+
+INFO 2024-10-01 19:52:45,787 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpv0jy9_aw/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:45,794 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp49twx2z9
+
+INFO 2024-10-01 19:52:45,795 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp49twx2z9/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:45,799 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpmqzspu3s
+
+INFO 2024-10-01 19:52:45,800 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpmqzspu3s/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:45,801 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpk7bp1knl
+
+INFO 2024-10-01 19:52:45,801 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpk7bp1knl/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:45,804 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp92ivuqm_
+
+INFO 2024-10-01 19:52:45,804 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmp92ivuqm_/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:45,799 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpk8b_vpr9
+
+INFO 2024-10-01 19:52:45,810 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpk8b_vpr9/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:45,818 [torch.distributed.nn.jit.instantiator:instantiator.py:<module>:21]
+Created a temporary directory at /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpras2l17q
+
+INFO 2024-10-01 19:52:45,819 [torch.distributed.nn.jit.instantiator:instantiator.py:_write:76]
+Writing /var/folders/84/skgmh_gx5bx_zpl3v_kjpwym0000gn/T/tmpras2l17q/_remote_module_non_scriptable.py
+
+INFO 2024-10-01 19:52:56,742 [root:evaluation.py:evaluate:103]
+{
+  "timestamp": "October 01, 2024 07:52:56 PM",
+  "run_id": "1765d645045f4c58a60de4196ae8a323",
+  "overall": {
+    "precision": 0.8890509696124052,
+    "recall": 0.8848167539267016,
+    "f1": 0.8843150451672779,
+    "num_samples": 191.0
+  },
+  "per_class": {
+    "natural-language-processing": {
+      "precision": 0.8823529411764706,
+      "recall": 0.9615384615384616,
+      "f1": 0.920245398773006,
+      "num_samples": 78.0
+    },
+    "computer-vision": {
+      "precision": 0.9516129032258065,
+      "recall": 0.8309859154929577,
+      "f1": 0.887218045112782,
+      "num_samples": 71.0
+    },
+    "other": {
+      "precision": 0.7931034482758621,
+      "recall": 0.8846153846153846,
+      "f1": 0.8363636363636363,
+      "num_samples": 26.0
+    },
+    "mlops": {
+      "precision": 0.8,
+      "recall": 0.75,
+      "f1": 0.7741935483870969,
+      "num_samples": 16.0
+    }
+  }
+}
+
+INFO 2024-10-01 19:57:22,833 [root:accelerator.py:_autodetect_tpu_version:216]
+Unable to poll TPU GCE metadata: HTTPConnectionPool(host='metadata.google.internal', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/attributes/accelerator-type (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x137446680>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+INFO 2024-10-01 19:57:22,835 [root:accelerator.py:_autodetect_num_tpus:171]
+Failed to detect number of TPUs: [Errno 2] No such file or directory: '/dev/vfio'
+
+INFO 2024-10-01 19:57:31,254 [root:predict.py:predict:161]
+[
+  {
+    "prediction": "natural-language-processing",
+    "probabilities": {
+      "computer-vision": 0.0016837321454659104,
+      "mlops": 0.0013547753915190697,
+      "natural-language-processing": 0.9961134195327759,
+      "other": 0.0008481048862449825
+    }
+  }
+]
+
