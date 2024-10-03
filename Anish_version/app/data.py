@@ -1,13 +1,14 @@
 import re
-import ray
-from ray.data import Dataset
-import numpy as np
-from transformers import BertModel,BertTokenizer
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from typing import Dict, List, Tuple
+from typing import Tuple
 
+import numpy as np
+import pandas as pd
+import ray
 from config import STOPWORDS
+from ray.data import Dataset
+from sklearn.model_selection import train_test_split
+from transformers import BertTokenizer
+
 
 def load_data(dataset_loc: str, num_samples: int = None) -> Dataset:
     """Load data from source into a Ray Dataset.
@@ -24,6 +25,7 @@ def load_data(dataset_loc: str, num_samples: int = None) -> Dataset:
     ds = ray.data.from_items(ds.take(num_samples)) if num_samples else ds
     return ds
 
+
 def stratify_split(
     ds: Dataset,
     stratify: str,
@@ -32,24 +34,25 @@ def stratify_split(
     seed: int = 1234,
 ) -> Tuple[Dataset, Dataset]:
     def _add_split(df):
-        train,test=train_test_split(df,test_size=test_size,shuffle=True,random_state=1234)
-        train["_split"]="train"
-        test["_split"]="test"
-        return pd.concat([train,test])
+        train, test = train_test_split(df, test_size=test_size, shuffle=True, random_state=1234)
+        train["_split"] = "train"
+        test["_split"] = "test"
+        return pd.concat([train, test])
 
-    def _get_split(df,split):
-        return df[df['_split']==split].drop("_split",axis=1)
+    def _get_split(df, split):
+        return df[df["_split"] == split].drop("_split", axis=1)
 
-    #Distributed
-    grouped=ds.groupby(stratify).map_groups(_add_split,batch_format="pandas")
-    train_ds=grouped.map_batches(_get_split,fn_kwargs={"split":"train"},batch_format="pandas")
-    test_ds=grouped.map_batches(_get_split,fn_kwargs={"split":"test"},batch_format="pandas")
+    # Distributed
+    grouped = ds.groupby(stratify).map_groups(_add_split, batch_format="pandas")
+    train_ds = grouped.map_batches(_get_split, fn_kwargs={"split": "train"}, batch_format="pandas")
+    test_ds = grouped.map_batches(_get_split, fn_kwargs={"split": "test"}, batch_format="pandas")
 
     # Shuffle each split (required)
     train_ds = train_ds.random_shuffle(seed=seed)
     test_ds = test_ds.random_shuffle(seed=seed)
 
-    return train_ds,test_ds
+    return train_ds, test_ds
+
 
 def clean_text(text, stopwords=STOPWORDS):
     """Clean raw text string."""
@@ -57,15 +60,15 @@ def clean_text(text, stopwords=STOPWORDS):
     text = text.lower()
 
     # Remove stopwords
-    pattern = re.compile(r'\b(' + r"|".join(stopwords) + r")\b\s*")
-    text = pattern.sub('', text)
+    pattern = re.compile(r"\b(" + r"|".join(stopwords) + r")\b\s*")
+    text = pattern.sub("", text)
 
     # Spacing and filters
     text = re.sub(r"([!\"'#$%&()*\+,-./:;<=>?@\\\[\]^_`{|}~])", r" \1 ", text)  # add spacing
     text = re.sub("[^A-Za-z0-9]+", " ", text)  # remove non alphanumeric chars
     text = re.sub(" +", " ", text)  # remove multiple spaces
     text = text.strip()  # strip white space at the ends
-    text = re.sub(r"http\S+", "", text)  #  remove links
+    text = re.sub(r"http\S+", "", text)  # remove links
 
     return text
 
@@ -88,19 +91,18 @@ def preprocess(df, class_to_index):
 
 
 class CustomPreprocessor:
-    def __init__(self,class_to_index={}):
-        self.class_to_index=class_to_index or {}
-        self.index_to_class={v:k for k,v in self.class_to_index.items()}
-
+    def __init__(self, class_to_index={}):
+        self.class_to_index = class_to_index or {}
+        self.index_to_class = {v: k for k, v in self.class_to_index.items()}
 
     def fit(self, ds: Dataset):
         if not self.class_to_index:
             # ds_arrow = ds.map_batches(lambda df: df, batch_format="pyarrow")
             # unique_tags=ds_arrow.unique(column="tag")
             tags = ds.unique(column="tag")
-            self.class_to_index={k:v for k,v in zip(tags,range(len(tags)))}
-            self.index_to_class={v:k for k,v in self.class_to_index.items()}
+            self.class_to_index = {k: v for k, v in zip(tags, range(len(tags)))}
+            self.index_to_class = {v: k for k, v in self.class_to_index.items()}
         return self
-    
+
     def transform(self, ds: Dataset):
-        return ds.map_batches(preprocess,fn_kwargs={"class_to_index":self.class_to_index},batch_format="pandas")
+        return ds.map_batches(preprocess, fn_kwargs={"class_to_index": self.class_to_index}, batch_format="pandas")

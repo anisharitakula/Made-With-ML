@@ -1,9 +1,7 @@
 import requests
-
+from ray import serve
 from sklearn.datasets import load_iris
 from sklearn.ensemble import GradientBoostingClassifier
-
-from ray import serve
 
 serve.start()
 
@@ -11,6 +9,7 @@ serve.start()
 iris_dataset = load_iris()
 model = GradientBoostingClassifier()
 model.fit(iris_dataset["data"], iris_dataset["target"])
+
 
 @serve.deployment(route_prefix="/iris")
 class BoostingModel:

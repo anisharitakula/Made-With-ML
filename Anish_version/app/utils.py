@@ -1,16 +1,17 @@
+import json
 import os
-import numpy as np
 import random
+from typing import Any, Dict, List
+from urllib.parse import urlparse
+
+import mlflow
+import numpy as np
 import torch
 from ray.air import Result
-from urllib.parse import urlparse
-import mlflow
-from typing import Any, Dict, List
-import json
 from ray.data import DatasetContext
 
-
 DatasetContext.get_current().execution_options.preserve_order = True
+
 
 def set_seeds(seed=42):
     """Set seeds for reproducibility."""
@@ -21,6 +22,7 @@ def set_seeds(seed=42):
     eval("setattr(torch.backends.cudnn, 'deterministic', True)")
     eval("setattr(torch.backends.cudnn, 'benchmark', False)")
     os.environ["PYTHONHASHSEED"] = str(seed)
+
 
 def load_dict(path: str) -> Dict:
     """Load a dictionary from a JSON's filepath.
@@ -53,26 +55,29 @@ def save_dict(d: Dict, path: str, cls: Any = None, sortkeys: bool = False) -> No
         fp.write("\n")
 
 
-def pad_array(arr,dtype=np.int32):
+def pad_array(arr, dtype=np.int32):
     max_len = max(len(row) for row in arr)
     padded_arr = np.zeros((arr.shape[0], max_len), dtype=dtype)
     for i, row in enumerate(arr):
-        padded_arr[i][:len(row)] = row
+        padded_arr[i][: len(row)] = row
     return padded_arr
 
+
 def collate_fn(batch):
-    batch['ids']=pad_array(batch['ids'])
-    batch['masks']=pad_array(batch['masks'])
-    dtypes={"ids":torch.int32,"masks":torch.int32,"targets":torch.int64}
-    tensor_batch={}
-    for key,array in batch.items():
-        tensor_batch[key]=torch.as_tensor(array, dtype=dtypes[key],device="cpu")
+    batch["ids"] = pad_array(batch["ids"])
+    batch["masks"] = pad_array(batch["masks"])
+    dtypes = {"ids": torch.int32, "masks": torch.int32, "targets": torch.int64}
+    tensor_batch = {}
+    for key, array in batch.items():
+        tensor_batch[key] = torch.as_tensor(array, dtype=dtypes[key], device="cpu")
     return tensor_batch
+
 
 def get_best_checkpoint(run_id):
     artifact_dir = urlparse(mlflow.get_run(run_id).info.artifact_uri).path  # get path from mlflow
     results = Result.from_path(artifact_dir)
     return results.best_checkpoints[0][0]
+
 
 def get_run_id(experiment_name: str, trial_id: str) -> str:  # pragma: no cover, mlflow functionality
     """Get the MLflow run ID for a specific Ray trial ID.

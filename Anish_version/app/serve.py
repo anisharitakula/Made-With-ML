@@ -1,22 +1,19 @@
 import argparse
+from http import HTTPStatus
 from typing import Dict
 
+import mlflow
+import ray
+from config import MLFLOW_TRACKING_URI
+from evaluation import evaluate
 from fastapi import FastAPI
+from predict import TorchPredictor, get_best_checkpoint, predict_proba
 from ray import serve
 from starlette.requests import Request
-import mlflow
-from batch_inference import get_best_checkpoint
-import ray
-from http import HTTPStatus
 
-from config import MLFLOW_TRACKING_URI
-from predict import predict_proba,TorchPredictor,get_best_checkpoint
-from evaluation import evaluate
+# Define a fastapi application
+app = FastAPI(title="Made with ML", description="Classify machine learning projects", version="0.1")
 
-#Define a fastapi application
-app = FastAPI(title="Made with ML",
-            description="Classify machine learning projects",
-            version="0.1")
 
 @serve.deployment(num_replicas="1", ray_actor_options={"num_cpus": 8, "num_gpus": 0})
 @serve.ingress(app)
@@ -64,7 +61,8 @@ class ModelDeployment:
                 results[i]["prediction"] = "other"
 
         return {"results": results}
-    
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--run_id", help="run ID to use for serving.")
@@ -72,4 +70,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
     ray.init()
     serve.run(ModelDeployment.bind(run_id=args.run_id, threshold=args.threshold))
-

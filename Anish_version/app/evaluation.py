@@ -1,21 +1,19 @@
-import json
 import datetime
-import ray
-from predict import TorchPredictor,get_best_checkpoint
-from sklearn.metrics import precision_recall_fscore_support
-from typing import Dict
+import json
 from collections import OrderedDict
-
+from typing import Dict
 
 import numpy as np
+import ray
 import typer
-from typing_extensions import Annotated
-from config import logger
 import utils
+from config import logger
+from predict import TorchPredictor, get_best_checkpoint
+from sklearn.metrics import precision_recall_fscore_support
+from typing_extensions import Annotated
 
 # Initialize Typer CLI app
 app = typer.Typer()
-
 
 
 def get_overall_metrics(y_true: np.ndarray, y_pred: np.ndarray) -> Dict:  # pragma: no cover, eval workload
@@ -36,6 +34,7 @@ def get_overall_metrics(y_true: np.ndarray, y_pred: np.ndarray) -> Dict:  # prag
         "num_samples": np.float64(len(y_true)),
     }
     return overall_metrics
+
 
 def get_per_class_metrics(y_true: np.ndarray, y_pred: np.ndarray, class_to_index: Dict) -> Dict:  # pragma: no cover, eval workload
     """Get per class performance metrics.
@@ -59,7 +58,6 @@ def get_per_class_metrics(y_true: np.ndarray, y_pred: np.ndarray, class_to_index
         }
     sorted_per_class_metrics = OrderedDict(sorted(per_class_metrics.items(), key=lambda tag: tag[1]["f1"], reverse=True))
     return sorted_per_class_metrics
-
 
 
 @app.command()
@@ -108,4 +106,3 @@ def evaluate(
 
 if __name__ == "__main__":  # pragma: no cover, checked during evaluation workload
     app()
-

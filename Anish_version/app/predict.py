@@ -1,24 +1,23 @@
+import json
 from pathlib import Path
-import typer
 from typing import Any, Dict, Iterable, List
-from typing_extensions import Annotated
+from urllib.parse import urlparse
 
 import numpy as np
-import ray 
-from ray.train.torch.torch_checkpoint import TorchCheckpoint
-from urllib.parse import urlparse
-from ray.air import Result
-import json
-from numpyencoder import NumpyEncoder
-
-
+import ray
+import typer
 from config import logger, mlflow
 from data import CustomPreprocessor
-from utils import collate_fn
 from model import FinetunedLLM
+from numpyencoder import NumpyEncoder
+from ray.air import Result
+from ray.train.torch.torch_checkpoint import TorchCheckpoint
+from typing_extensions import Annotated
+from utils import collate_fn
 
 # Initialize Typer CLI app
 app = typer.Typer()
+
 
 def decode(indices: Iterable[Any], index_to_class: Dict) -> List:
     """Decode indices to labels.
@@ -74,7 +73,7 @@ class TorchPredictor:
         preprocessor = CustomPreprocessor(class_to_index=metadata["class_to_index"])
         model = FinetunedLLM.load(Path(checkpoint.path, "args.json"), Path(checkpoint.path, "model.pt"))
         return cls(preprocessor=preprocessor, model=model)
-    
+
 
 def predict_proba(
     ds: ray.data.dataset.Dataset,

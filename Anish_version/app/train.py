@@ -1,31 +1,32 @@
-import typer
-import json
-from typing_extensions import Annotated
 import datetime
+import json
+import tempfile
 
+import data
+import numpy as np
 import ray
+import ray.train as train
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import typer
+import utils
+from config import EFS_DIR, MLFLOW_TRACKING_URI, logger
+from model import FinetunedLLM
 from ray.air.integrations.mlflow import MLflowLoggerCallback
 
-import torch
-import pandas as pd
-import numpy as np
-
-import torch.nn as nn
-from transformers import BertModel
-
-from model import FinetunedLLM
-import data, utils
-from config import logger,EFS_DIR,MLFLOW_TRACKING_URI
-
-
-#Utility functions for distributed training
-from ray.train import Checkpoint,CheckpointConfig, DataConfig, RunConfig, ScalingConfig
-import ray.train as train
+# Utility functions for distributed training
+from ray.train import (
+    Checkpoint,
+    CheckpointConfig,
+    DataConfig,
+    RunConfig,
+    ScalingConfig,
+)
 from ray.train.torch import TorchTrainer
-import torch.nn.functional as F
-import tempfile
 from torch.nn.parallel.distributed import DistributedDataParallel
-
+from transformers import BertModel
+from typing_extensions import Annotated
 
 # Initialize Typer CLI app
 app = typer.Typer()
@@ -46,6 +47,7 @@ def train_step(ds, batch_size, model, num_classes, loss_fn, optimizer):
         loss += (J.detach().item() - loss) / (i + 1)  # cumulative loss
     return loss
 
+
 def eval_step(ds, batch_size, model, num_classes, loss_fn):
     """Eval step."""
     model.eval()
@@ -62,33 +64,34 @@ def eval_step(ds, batch_size, model, num_classes, loss_fn):
             y_preds.extend(torch.argmax(z, dim=1).cpu().numpy())
     return loss, np.vstack(y_trues), np.vstack(y_preds)
 
-#Training loop worker
+
+# Training loop worker
 def train_loop_per_worker(config):
-    #Hyperparameters
-    dropout_p=config["dropout_p"]
-    lr=config["lr"]
-    lr_factor=config["lr_factor"]
-    lr_patience=config["lr_patience"]
-    num_epochs=config["num_epochs"]
-    batch_size=config["batch_size"]
-    num_classes=config["num_classes"]
+    # Hyperparameters
+    dropout_p = config["dropout_p"]
+    lr = config["lr"]
+    lr_factor = config["lr_factor"]
+    lr_patience = config["lr_patience"]
+    num_epochs = config["num_epochs"]
+    batch_size = config["batch_size"]
+    num_classes = config["num_classes"]
 
-    #Get datasets
+    # Get datasets
     utils.set_seeds()
-    train_ds=train.get_dataset_shard("train")
-    val_ds=train.get_dataset_shard("val")
+    train_ds = train.get_dataset_shard("train")
+    val_ds = train.get_dataset_shard("val")
 
-    #Model
+    # Model
     llm = BertModel.from_pretrained("allenai/scibert_scivocab_uncased", return_dict=False)
     model = FinetunedLLM(llm=llm, dropout_p=dropout_p, embedding_dim=llm.config.hidden_size, num_classes=num_classes)
     model = train.torch.prepare_model(model)
 
-    #Training components
+    # Training components
     loss_fn = nn.BCEWithLogitsLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min", factor=lr_factor, patience=lr_patience)
 
-    #Training
+    # Training
     batch_size_per_worker = batch_size // 6
     for epoch in range(num_epochs):
         # Step
@@ -103,7 +106,7 @@ def train_loop_per_worker(config):
                 model.module.save(dp=dp)
             else:
                 model.save(dp=dp)
-            
+
             metrics = dict(epoch=epoch, lr=optimizer.param_groups[0]["lr"], train_loss=train_loss, val_loss=val_loss)
             checkpoint = Checkpoint.from_directory(dp)
             train.report(metrics, checkpoint=checkpoint)
